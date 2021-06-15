@@ -8,7 +8,7 @@ const ipcRenderer = require('electron').ipcRenderer;
 ipcRenderer.on('userDataPath', (event: any, userDataPath: string) => {
 
     setGlobalUserDataPath(userDataPath);
-    console.log("User data path: " + userDataPath);
+    console.log("User data path:", userDataPath);
 
     ReactDom.render(<Main />, document.getElementById('root'));
 });
