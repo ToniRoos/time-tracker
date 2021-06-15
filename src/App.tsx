@@ -4,6 +4,7 @@ import * as ReactDom from 'react-dom';
 import { setGlobalUserDataPath } from './logic/utils';
 // import 'bootstrap';
 
+
 const ipcRenderer = require('electron').ipcRenderer;
 ipcRenderer.on('userDataPath', (event: any, userDataPath: string) => {
 
