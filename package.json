@@ -10,7 +10,7 @@
     "start": "npm run build:dev && electron-forge start",
     "test": "jest",
     "package": "npm run build && electron-forge package",
-    "make": "npm run build && electron-forge make"
+    "make": "npm run build && electron-forge make --targets @electron-forge/maker-squirrel"
   },
   "author": "",
   "license": "ISC",
@@ -86,21 +86,5 @@
       "js",
       "jsx"
     ]
-  },
-  "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-zip",
-          "config": {
-            "name": "TimeTracker"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip"
-        }
-      ]
-    }
   }
 }
