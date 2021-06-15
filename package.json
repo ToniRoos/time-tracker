@@ -1,6 +1,6 @@
 {
   "name": "time_tracker_app",
-  "version": "1.0.1",
+  "version": "1.0.1node",
   "description": "",
   "main": "electron.js",
   "scripts": {
